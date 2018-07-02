@@ -68,7 +68,7 @@
     <article id="post-linux-shell-command" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/07/02/linux-shell-command/" class="article-date">
-  <time datetime="2018-07-02T06:56:19.969Z" itemprop="datePublished">2018-07-02</time>
+  <time datetime="2018-07-02T07:52:16.468Z" itemprop="datePublished">2018-07-02</time>
 </a>
     
   </div>
@@ -88,7 +88,23 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>以下为一些常用的linux命令</p>
-<h2><span id="quick-start">Quick Start</span></h2><h3><span id="create-a-new-post">Create a new post</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<h2><span id="1求两个文件的交集和差集">1.求两个文件的交集和差集</span></h2><p>如下有2个文件a.txt b.txt ，求出2个文件的交集和差集<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">localhost:test tammy$ cat a.txt</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">10</span><br><span class="line"></span><br><span class="line">localhost:test tammy$ cat b.txt</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">7</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td></tr></table></figure></p>
+<h3><span id="comm命令">comm命令</span></h3><blockquote>
+<p>comm命令可以用于两个文件之间的比较，它有一些选项可以用来调整输出，以便执行交集、求差、以及差集操作。</p>
+</blockquote>
+<ul>
+<li>交集：打印出两个文件所共有的行。</li>
+<li>求差：打印出指定文件所包含的且不相同的行。</li>
+<li>差集：打印出包含在一个文件中，但不包含在其他指定文件中的行。</li>
+</ul>
+<p>选项</p>
+<ul>
+<li>1：不显示在第一个文件出现的内容；</li>
+<li>2：不显示在第二个文件中出现的内容；</li>
+<li>3：不显示同时在两个文件中都出现的内容。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">localhost:<span class="built_in">test</span> tammy$ comm a.txt b.txt</span><br><span class="line">1</span><br><span class="line">		2</span><br><span class="line">		3</span><br><span class="line">	4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">10</span><br><span class="line">	7</span><br><span class="line">	9</span><br><span class="line">	10</span><br></pre></td></tr></table></figure>
+<p>输出的第一列只包含在aaa.txt中出现的行，第二列包含在bbb.txt中出现的行，第三列包含在aaa.txt和bbb.txt中相同的行。各列是以制表符（\t）作为定界符。</p>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3><span id="run-server">Run server</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
@@ -100,7 +116,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/02/linux-shell-command/" data-id="cjj3wxeu80000l8s6k15obl4e" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/02/linux-shell-command/" data-id="cjj3yxaf900019ks6zwzsljt3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -145,7 +161,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/31/hello-world/" data-id="cjj3wxeuh0001l8s6wp1766me" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/31/hello-world/" data-id="cjj3yxaf400009ks6w8weg52w" class="article-share-link">Share</a>
       
       
     </footer>

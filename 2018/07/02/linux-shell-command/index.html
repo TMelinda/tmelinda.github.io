@@ -7,17 +7,17 @@
   
   <title>Linux shell常用命令 | Welcome</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="以下为一些常用的linux命令 [TOC] 1.求两个文件的交集和差集comm命令 comm命令可以用于两个文件之间的比较，它有一些选项可以用来调整输出，以便执行交集、求差、以及差集操作。要注意两个文件必须是排序和唯一(sorted and unique)的，默认输出为三列，第一列为是A-B，第二列B-A，第三列为A交B。   交集：打印出两个文件所共有的行。 求差：打印出指定文件所包含的且不相同">
+  <meta name="description" content="以下为一些常用的linux命令 [TOC] 1.求两个文件的交集和差集comm命令​        comm命令可以用于两个文件之间的比较，它有一些选项可以用来调整输出，以便执行交集、求差、以及差集操作。要注意两个文件必须是排序和唯一(sorted and unique)的，默认输出为三列，第一列为是A-B，第二列B-A，第三列为A交B。  交集：打印出两个文件所共有的行。 求差：打印出指定文件所">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux shell常用命令">
 <meta property="og:url" content="http://yoursite.com/2018/07/02/linux-shell-command/index.html">
 <meta property="og:site_name" content="Welcome">
-<meta property="og:description" content="以下为一些常用的linux命令 [TOC] 1.求两个文件的交集和差集comm命令 comm命令可以用于两个文件之间的比较，它有一些选项可以用来调整输出，以便执行交集、求差、以及差集操作。要注意两个文件必须是排序和唯一(sorted and unique)的，默认输出为三列，第一列为是A-B，第二列B-A，第三列为A交B。   交集：打印出两个文件所共有的行。 求差：打印出指定文件所包含的且不相同">
+<meta property="og:description" content="以下为一些常用的linux命令 [TOC] 1.求两个文件的交集和差集comm命令​        comm命令可以用于两个文件之间的比较，它有一些选项可以用来调整输出，以便执行交集、求差、以及差集操作。要注意两个文件必须是排序和唯一(sorted and unique)的，默认输出为三列，第一列为是A-B，第二列B-A，第三列为A交B。  交集：打印出两个文件所共有的行。 求差：打印出指定文件所">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-02T08:51:11.197Z">
+<meta property="og:updated_time" content="2018-07-02T08:59:51.654Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux shell常用命令">
-<meta name="twitter:description" content="以下为一些常用的linux命令 [TOC] 1.求两个文件的交集和差集comm命令 comm命令可以用于两个文件之间的比较，它有一些选项可以用来调整输出，以便执行交集、求差、以及差集操作。要注意两个文件必须是排序和唯一(sorted and unique)的，默认输出为三列，第一列为是A-B，第二列B-A，第三列为A交B。   交集：打印出两个文件所共有的行。 求差：打印出指定文件所包含的且不相同">
+<meta name="twitter:description" content="以下为一些常用的linux命令 [TOC] 1.求两个文件的交集和差集comm命令​        comm命令可以用于两个文件之间的比较，它有一些选项可以用来调整输出，以便执行交集、求差、以及差集操作。要注意两个文件必须是排序和唯一(sorted and unique)的，默认输出为三列，第一列为是A-B，第二列B-A，第三列为A交B。  交集：打印出两个文件所共有的行。 求差：打印出指定文件所">
   
     <link rel="alternate" href="/atom.xml" title="Welcome" type="application/atom+xml">
   
@@ -88,18 +88,14 @@
       
         <p>以下为一些常用的linux命令</p>
 <p>[TOC]</p>
-<h2><span id="1求两个文件的交集和差集">1.求两个文件的交集和差集</span></h2><h3><span id="comm命令">comm命令</span></h3><blockquote>
-<p>comm命令可以用于两个文件之间的比较，它有一些选项可以用来调整输出，以便执行交集、求差、以及差集操作。要注意两个文件必须是<em>排序和唯一(sorted and unique)的</em>，默认输出为三列，第一列为是A-B，第二列B-A，第三列为A交B。</p>
-</blockquote>
+<h2><span id="1求两个文件的交集和差集">1.求两个文件的交集和差集</span></h2><h3><span id="comm命令">comm命令</span></h3><p>​        comm命令可以用于两个文件之间的比较，它有一些选项可以用来调整输出，以便执行交集、求差、以及差集操作。要注意两个文件必须是<em>排序和唯一(sorted and unique)的</em>，默认输出为三列，第一列为是A-B，第二列B-A，第三列为A交B。</p>
 <ul>
 <li>交集：打印出两个文件所共有的行。</li>
 <li>求差：打印出指定文件所包含的且不相同的行。</li>
 <li>差集：打印出包含在一个文件中，但不包含在其他指定文件中的行。</li>
 </ul>
 <p>命令</p>
-<blockquote>
-<p>comm [参数选项]  文件名1 文件名2</p>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">comm [参数选项]  文件名1 文件名2</span><br></pre></td></tr></table></figure>
 <p>选项</p>
 <ul>
 <li>1：不显示在第一个文件出现的内容；</li>
@@ -124,20 +120,15 @@
 <p>awk操作为对输出做处理~</p>
 <h3><span id="grep命令">grep命令</span></h3><p><em>grep命令的功能强大，此处仅介绍文件比较功能</em></p>
 <p>命令</p>
-<blockquote>
-<p>grep -F -f file1 file2</p>
-<p>功能描述：将file2中存在file1的行输出———&gt;2个文件的交集。但需要注意的是，如果是求交集，需要uniq下。</p>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">grep -F -f file1 file2</span><br><span class="line">功能描述：将file2中存在file1的行输出———&gt;2个文件的交集。但需要注意的是，如果是求交集，需要uniq下。</span><br></pre></td></tr></table></figure>
 <p>示例</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">localhost:test tammy$ cat a.txt</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">10</span><br><span class="line">2</span><br><span class="line">localhost:test tammy$ cat b.txt</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">7</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">3</span><br><span class="line">localhost:test tammy$ grep -F -f a.txt b.txt</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">10</span><br><span class="line">3</span><br><span class="line">localhost:test tammy$ grep -F -f a.txt b.txt | sort | uniq</span><br><span class="line">10</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
 <p>那差集如何求呢？依旧可以用上grep命令</p>
 <p>命令</p>
-<blockquote>
-<p>grep -F -v -f file1 file2</p>
-<p>说明：grep的-v 是取反的意思，如上意思为：输出file2中不包含file1的行  ———&gt;file2的差集</p>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">grep -F -v -f file1 file2</span><br><span class="line">说明：grep的-v 是取反的意思，如上意思为：输出file2中不包含file1的行  ———&gt;file2的差集</span><br></pre></td></tr></table></figure>
 <p>示例</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">localhost:test tammy$ grep -F -v -f a.txt b.txt</span><br><span class="line">4</span><br><span class="line">7</span><br><span class="line">9</span><br><span class="line">localhost:test tammy$ grep -F -v -f b.txt a.txt</span><br><span class="line">1</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td></tr></table></figure>
+<hr>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3><span id="run-server">Run server</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
@@ -149,7 +140,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/02/linux-shell-command/" data-id="cjj411fm000001ws61qg9xj1i" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/02/linux-shell-command/" data-id="cjj41az3v00005os6d3tayggh" class="article-share-link">Share</a>
       
       
     </footer>
